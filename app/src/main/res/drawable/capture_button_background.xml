@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state - gray -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Outer ring -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#CCCCCC" />
+                    <stroke
+                        android:width="4dp"
+                        android:color="#CCCCCC" />
+                </shape>
+            </item>
+            <!-- Inner circle -->
+            <item android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp">
+                <shape android:shape="oval">
+                    <solid android:color="#CCCCCC" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+    <!-- Default state - white -->
+    <item>
+        <layer-list>
+            <!-- Outer ring -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#FFFFFF" />
+                    <stroke
+                        android:width="4dp"
+                        android:color="#FFFFFF" />
+                </shape>
+            </item>
+            <!-- Inner circle -->
+            <item android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp">
+                <shape android:shape="oval">
+                    <solid android:color="#FFFFFF" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector> 
